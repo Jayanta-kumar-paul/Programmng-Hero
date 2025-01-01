@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+<sample>
+<item ID="1">
+<name>Book</name>
+<price>560Rs.</price>
+</item>
+<item ID="2">
+<name>Clothes</name>
+<price>1099Rs.</price>
+</item>
+</sample>

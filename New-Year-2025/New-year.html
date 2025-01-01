@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffcccb, #ffeb99);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff5733;
+            text-shadow: 2px 2px #ffc300;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .countdown {
+            font-size: 2em;
+            font-weight: bold;
+            color: #28a745;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy New Year 2025! 🎉</h1>
+    <p>Wishing you a year filled with joy, success, and good health!</p>
+    <div class="countdown" id="countdown">Countdown to 2025...</div>
+
+    <script>
+        function updateCountdown() {
+            const newYear = new Date('January 1, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const timeLeft = newYear - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').textContent = 
+                `Time Left: ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+
+            if (timeLeft < 0) {
+                clearInterval(timer);
+                document.getElementById('countdown').textContent = "🎆 It's 2025! Happy New Year! 🎆";
+            }
+        }
+
+        const timer = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

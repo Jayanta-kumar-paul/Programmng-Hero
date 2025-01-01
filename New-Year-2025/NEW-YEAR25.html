@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Year Countdown 2025</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    #countdown {
+      font-size: 2rem;
+      padding: 20px;
+      border: 2px solid white;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    #message {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #f9c74f;
+      animation: fadeIn 2s ease-in-out infinite alternate;
+      display: none;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0.5;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Countdown to 2025</h1>
+    <div id="countdown"></div>
+    <div id="message">🎉 Happy New Year 2025! 🎆</div>
+  </div>
+  <script>
+    // Target date
+    const newYearDate = new Date("January 1, 2025 00:00:00").getTime();
+
+    // Countdown function
+    const updateCountdown = setInterval(() => {
+      const now = new Date().getTime();
+      const timeLeft = newYearDate - now;
+
+      if (timeLeft <= 0) {
+        // Stop the countdown and show the message
+        clearInterval(updateCountdown);
+        document.getElementById("countdown").style.display = "none";
+        document.getElementById("message").style.display = "block";
+        return;
+      }
+
+      // Calculate time components
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      // Update the countdown display
+      document.getElementById("countdown").innerHTML = `
+        <div><strong>${days}</strong> Days</div>
+        <div><strong>${hours}</strong> Hours</div>
+        <div><strong>${minutes}</strong> Minutes</div>
+        <div><strong>${seconds}</strong> Seconds</div>
+      `;
+    }, 1000);
+  </script>
+</body>
+</html>
