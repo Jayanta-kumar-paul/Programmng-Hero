@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+<students>
+    <student>
+        <id>1</id>
+        <name>Shyam Sarkar</name>
+        <age>20</age>
+        <gender>Male</gender>
+        <department>Computer Science</department>
+        <grades>
+            <grade subject="Math">90</grade>
+            <grade subject="Physics">85</grade>
+            <grade subject="English">88</grade>
+        </grades>
+    </student>
+    <student>
+        <id>2</id>
+        <name> Tanu Sarkar</name>
+        <age>22</age>
+        <gender>Female</gender>
+        <department>Physics </department>
+        <grades>
+            <grade subject="Math">95</grade>
+            <grade subject="Thermodynamics">89</grade>
+            <grade subject="English">92</grade>
+        </grades>
+    </student>
+</students>
