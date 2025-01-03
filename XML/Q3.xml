@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Address [
+    <!ELEMENT Address (Name, Company, Phone)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Company (#PCDATA)>
+    <!ELEMENT Phone (#PCDATA)>
+]>
+<Address>
+    <Name>Jayanta Kumar Paul</Name>
+    <Company>JK Enterprice</Company>
+    <Phone>123-456-7890</Phone>
+</Address>

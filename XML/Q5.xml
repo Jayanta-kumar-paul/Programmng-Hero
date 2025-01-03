@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+<student>
+<id>543</id>
+<name>Jayanta</name>
+<age>21</age>
+<addr>Mlalda</addr>
+<email>nsr@gmail.com</email>
+</student>
