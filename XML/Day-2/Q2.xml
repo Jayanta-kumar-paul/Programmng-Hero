@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<book xmlns:xsi="URI" 
-      xsi:schemaLocation="D:\All code\Coding Time\Html\XML\Day-2\Q2.xsd">
+<book xmlns:xs="URI" 
+      xs:schemalocation="D:\All code\Coding Time\Html\XML\Day-2\Q2.xsd">
     <name>Jayanta</name>
     <age>21</age>
     <addr>Mlalda</addr>
