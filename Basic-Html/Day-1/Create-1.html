@@ -2,8 +2,14 @@
 <html>
 <title> My Project</title>
 <style>
+    * {
+  border: 2px solid green;
+  background-color: beige;
+}
    /* body {background-color:skyblue;} */
-   body {background-image:url('Kumar.jpg') ;
+   body {
+    /* background-image:url('Kumar.jpg') ; */
+    background-color: rgb(203, 190, 190);
    height :"100vh" ;
    width:"";
    background-repeat:repeat-x;
@@ -32,6 +38,17 @@
         border-style:outset; 
         border-width:5px;
     } */
+     button
+     {
+        background-color: #ff0000;
+        color:rgb(255, 255, 255);
+     } 
+     p 
+     {
+        font-size :20px;
+        color: yellow;
+        text-transform: capitalize;
+     }
 </style>
 
 <head>
@@ -39,8 +56,10 @@
    <h2 >Hello World !</h2>
    <h3 >Hello World !</h3>
    <h4 >Hello World !</h4>
-
-   
+   <p>Absolutely positioned elements are
+     removed from the normal flow. The document and other elements 
+     behave like the absolutely positioned element does not exist.</p>
+   <button type="submit">Click Me!</button>
     
 </head>
 <body>
