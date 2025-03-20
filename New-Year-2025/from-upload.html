@@ -1,0 +1,58 @@
+<html>
+
+<head> 
+    <title>HTML Form Example</title>
+</head>
+
+<body>
+     
+    <h1>HTML Form Example</h1>
+    <form method="POST">
+        <!-- Text Input -->
+        <label for="name"><strong>Name:</strong></label>
+        <input type="text">
+        <br /><br />
+        <label for=""><strong>DOB:</strong></label>
+        <input type="date">
+        <br /><br />
+        <label for=""><strong>Email:</strong></label>
+        <input type="email">
+        <br /><br />
+        <label for=""><strong>Password:</strong></label>
+        <input type="password">
+        <br /><br />
+
+        <label><strong>Gender:</strong></label>
+        <input name="gender" type="radio">
+        <label for="male">Male</label>
+        <input name="gender" type="radio">
+        <label for="female">Female</label>
+        <input name="gender" type="radio">
+        <label for="others">others</label>
+        <br /><br />
+        
+        <label for="file-upload" class="custom-file-upload">
+           <strong> Choose File <strong>
+        </label>
+        <input type="file" id="file-upload">
+        <br /><br />
+
+        <!-- Submit Button -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <?php
+    echo"<pre>";
+    print_r($_POST);
+    if(isset($_POST['name']))
+   {
+   // print_r($_POST);
+   $name=$_POST['name'];
+  // echo $name;
+    }
+   echo"</pre>";
+    ?>
+</body>
+
+</html> 

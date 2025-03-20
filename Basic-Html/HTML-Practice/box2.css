@@ -1,0 +1,41 @@
+#a
+{ color: Blue;
+    height:100px;
+    border-style: solid;
+    width:150px;
+    background-color:red;
+position:relative;
+left:100px;
+}
+#n
+{ color: black;
+    border-style: solid;
+    height:100px;
+    width:150px;
+    background-color:aqua;
+    position:sticky;
+    left:200px;
+    top:0px;
+    
+}
+#c
+{ color:rgb(107, 43, 226);
+    height:100px;
+    border-style: solid;
+    width: 150px;
+    background-color: rgb(9, 170, 22);
+    position:absolute;
+    left:400px;
+}
+#d
+{
+    color:rgb(31, 16, 114);
+    height:100px;
+    border-style: solid;
+
+    width: 150px;
+    background-color: rgb(231, 22, 74);
+    position: fixed;
+
+
+}

@@ -1,0 +1,90 @@
+<html>
+    <link rel="stylesheet" href="Q23.css">
+<head> 
+    <title>HTML Form Example</title>
+</head>
+
+<body>
+    <script>
+        function data()
+        {
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+        var c=document.getElementById("n3").value;
+        var d=document.getElementById("n4").value;
+        if(a==""||b=="" ||c==""||d=="")
+    {
+        alert("all field are mendetary");
+        // return false;
+    }
+    else if(b.lenght>10==b.lenght<10)
+    {
+        alert("Number should be 10 digit");
+        // return false;
+    }
+    else if(c!=d)
+    {
+        alert("wrong password");
+    }
+    else
+    {
+        true;
+    }
+        }
+    </script> 
+     
+    <h1>Login From</h1>
+    <form onsubmit=" return data()" action="Q24.html">
+        
+        <label for=""><strong>User name :</strong></label>
+        <input type="text" id="n1" name="username" placeholder="Enter a username" >
+        <span style="color:red" id="nameError"></span>
+        <br /><br />
+        <label for=""><strong>Contact :</strong></label>
+        <input type="number" id="n2" name="Contact" placeholder="Mobile no." >
+        <span style="color:red" id="ContactError"></span>
+        <br /><br />
+        <label for=""><strong>Password :</strong></label>
+        <input type="password" id="n3" name="password" placeholder="Enter a password" >
+        <span style="color:red" id="passwordError"></span>
+        <br /><br />
+        <label for=""><strong>Comfirm password :</strong></label>
+        <input type="password"  id="n4" name="password" placeholder="confirm password" >
+        <span style="color:red" id="passwordError"></span>
+        <br /><br />
+       
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html> 
+
+
+<!-- <!DOCTYPE html>
+
+<head>
+  
+    <title>Login</title>
+    <link rel="stylesheet" href="Q23.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form_container">
+            <h3>Login Form Validation</h3>
+            <form action="#" method="post">
+                <p>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Enter a username" required>
+                    <span style="color:red" id="nameError"></span><br>
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter a password" required>
+                    <span style="color:red" id="passwordError"></span>
+                </p>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->
