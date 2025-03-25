@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Timetable>
+    <Day name="Monday">
+        <Class>
+            <TimeSlot>09:00 - 10:00 AM</TimeSlot>
+            <Subject>Mathematics</Subject>
+            <Classroom>Room 101</Classroom>
+        </Class>
+        <Class>
+            <TimeSlot>10:15 - 11:15 AM</TimeSlot>
+            <Subject>Physics</Subject>
+            <Classroom>Room 102</Classroom>
+        </Class>
+    </Day>
+
+    <Day name="Tuesday">
+        <Class>
+            <TimeSlot>09:00 - 10:00 AM</TimeSlot>
+            <Subject>English</Subject>
+            <Classroom>Room 201</Classroom>
+        </Class>
+        <Class>
+            <TimeSlot>10:15 - 11:15 AM</TimeSlot>
+            <Subject>Computer Science</Subject>
+            <Classroom>Lab 1</Classroom>
+        </Class>
+    </Day>
+</Timetable>

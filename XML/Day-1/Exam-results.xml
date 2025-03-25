@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExamResults>
+    <Student>
+        <Name>Rahul Sharma</Name>
+        <StudentID>2024101</StudentID>
+        <Subjects>
+            <Subject>
+                <Name>Mathematics</Name>
+                <Marks>85</Marks>
+                <Grade>A</Grade>
+            </Subject>
+            <Subject>
+                <Name>Physics</Name>
+                <Marks>78</Marks>
+                <Grade>B</Grade>
+            </Subject>
+        </Subjects>
+    </Student>
+    
+    <Student>
+        <Name>Priya Verma</Name>
+        <StudentID>2024102</StudentID>
+        <Subjects>
+            <Subject>
+                <Name>Chemistry</Name>
+                <Marks>92</Marks>
+                <Grade>A+</Grade>
+            </Subject>
+            <Subject>
+                <Name>Biology</Name>
+                <Marks>88</Marks>
+                <Grade>A</Grade>
+            </Subject>
+        </Subjects>
+    </Student>
+</ExamResults>
